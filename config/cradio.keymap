@@ -138,10 +138,10 @@
         mouse {
             display-name = "MOUSE";
             bindings = <
-&tog 5  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(UP_ARROW))  &kp LS(LC(RIGHT_ARROW))    &trans     &trans          &trans        &trans          &trans
-&trans  &kp CAPSLOCK            &kp TAB                 &kp LEFT_ALT          &kp LCTRL                  &trans     &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&trans  &kp LEFT_GUI            &kp PAGE_DOWN           &kp PAGE_UP           &kp LS(LCTRL)              &trans     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                                        &mkp LCLK             &mkp RCLK                  &mkp LCLK  &mkp RCLK
+&tog 5       &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(UP_ARROW))  &kp LS(LC(RIGHT_ARROW))    &trans     &trans          &trans        &trans          &trans
+&trans       &kp CAPSLOCK            &kp TAB                 &kp LEFT_ALT          &kp LCTRL                  &trans     &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&bootloader  &kp LEFT_GUI            &kp PAGE_DOWN           &kp PAGE_UP           &kp LS(LCTRL)              &trans     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+                                                             &mkp LCLK             &mkp RCLK                  &mkp LCLK  &mkp RCLK
             >;
         };
 
