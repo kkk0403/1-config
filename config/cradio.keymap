@@ -148,7 +148,7 @@
         layer_6 {
             bindings = <
 &trans  &trans       &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(TAB)  &trans  &kp TAB      &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(TAB)  &trans  &kp TAB      &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans
                              &bootloader  &tog 5    &trans  &trans
             >;
