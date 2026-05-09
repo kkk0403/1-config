@@ -82,6 +82,15 @@
         };
     };
 
+    macros {
+        ob1: ob1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp SPACE>;
+            label = "OB1";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -148,7 +157,7 @@
         layer_6 {
             bindings = <
 &trans  &trans       &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(TAB)  &trans  &kp TAB      &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(TAB)  &trans  &kp TAB      &ob1      &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans
                              &bootloader  &tog 5    &trans  &trans
             >;
