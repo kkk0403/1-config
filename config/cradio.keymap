@@ -174,10 +174,10 @@
 
         layer_8 {
             bindings = <
-&trans  &kp LS(LC(LEFT))  &trans  &kp LS(LC(RIGHT))  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &msc SCRL_LEFT    &trans  &msc SCRL_RIGHT    &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans  &trans             &trans    &trans  &trans  &trans  &trans  &trans
-                                  &trans             &trans    &trans  &trans
+&msc SCRL_LEFT  &kp LS(LC(LEFT))  &trans  &kp LS(LC(RIGHT))  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans  &trans
+&trans          &trans            &trans  &trans             &trans             &trans  &trans  &trans  &trans  &trans
+&trans          &trans            &trans  &trans             &trans             &trans  &trans  &trans  &trans  &trans
+                                          &trans             &trans             &trans  &trans
             >;
         };
     };
