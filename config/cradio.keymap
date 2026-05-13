@@ -148,9 +148,9 @@
             display-name = "MOUSE";
             bindings = <
 &trans  &trans       &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)         &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB      &tog 5  &kp LEFT_ALT       &ob1                    &trans  &trans  &trans  &trans  &trans
-&trans  &kp RS(TAB)  &trans  &kp LS(LC(DOWN))   &kp LS(LC(UP_ARROW))    &trans  &trans  &trans  &trans  &trans
-                             &trans             &trans                  &trans  &trans
+&trans  &kp LS(TAB)  &tog 5  &kp TAB            &ob1                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &kp LS(LC(DOWN))   &kp LS(LC(UP_ARROW))    &trans  &trans  &trans  &trans  &trans
+                             &kp LEFT_ALT       &trans                  &trans  &trans
             >;
         };
 
