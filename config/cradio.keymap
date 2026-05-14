@@ -77,8 +77,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -97,7 +97,7 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp Q  &kp W  &lt 8 E  &kp R             &kp T        &kp Y      &kp U        &kp I      &kp O      &kp P
+&kp Q  &kp W  &kp E    &kp R             &kp T        &kp Y      &kp U        &kp I      &kp O      &kp P
 &kp A  &kp S  &lt 5 D  &ht LEFT_ALT F    &lt 7 G      &kp H      &kp J        &kp K      &kp L      &kp BSPC
 &kp Z  &kp X  &kp C    &kp V             &lt 6 B      &kp N      &kp M        &kp SPACE  &kp COMMA  &kp CAPSLOCK
                        &lt 2 LEFT_SHIFT  &kp LCTRL    &kp RCTRL  &lt 3 ENTER
@@ -137,7 +137,7 @@
         tri_layer {
             display-name = "FUNC";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog WIN        &kp C_MUTE    &kp C_PREV
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 1          &kp C_MUTE    &kp C_PREV
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &studio_unlock  &kp C_VOL_UP  &kp C_PP
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &soft_off       &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
@@ -147,37 +147,28 @@
         mouse {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans       &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)         &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(TAB)  &tog 5  &kp TAB            &ob1                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &kp LS(LC(DOWN))   &kp LS(LC(UP_ARROW))    &trans  &trans  &trans  &trans  &trans
-                             &kp LEFT_ALT       &trans                  &trans  &trans
+&trans            &trans                &trans  &trans            &trans               &trans  &trans  &trans  &trans  &trans
+&trans            &kp LS(TAB)           &tog 5  &kp TAB           &ob1                 &trans  &trans  &trans  &trans  &trans
+&kp LS(LC(LEFT))  &kp LS(LC(UP_ARROW))  &trans  &kp LS(LC(DOWN))  &kp LS(LC(RIGHT))    &trans  &trans  &trans  &trans  &trans
+                                                &kp LEFT_ALT      &trans               &trans  &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&trans            &trans            &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans
-&bootloader       &trans            &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans
-&kp LS(LC(DOWN))  &kp LS(LC(LEFT))  &mkp MB2  &mkp MB3  &trans      &trans  &trans  &trans  &trans  &trans
-                                              &trans    &mkp MB1    &trans  &trans
+&trans            &trans            &trans         &trans     &trans      &trans  &trans  &trans  &trans  &trans
+&bootloader       &kp DELETE        &kp BACKSPACE  &trans     &trans      &trans  &trans  &trans  &trans  &trans
+&kp LS(LC(DOWN))  &kp LS(LC(LEFT))  &mkp MB2       &mkp MB3   &trans      &trans  &trans  &trans  &trans  &trans
+                                                   &kp ENTER  &mkp MB1    &trans  &trans
             >;
         };
 
         layer_7 {
             bindings = <
-&trans  &trans      &trans         &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans         &trans     &trans    &trans  &trans  &trans  &trans  &trans
-                                   &trans     &trans    &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&msc SCRL_LEFT  &kp LS(LC(LEFT))  &trans  &kp LS(LC(RIGHT))  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans  &trans
-&trans          &trans            &trans  &trans             &trans             &trans  &trans  &trans  &trans  &trans
-&trans          &trans            &trans  &trans             &trans             &trans  &trans  &trans  &trans  &trans
-                                          &trans             &trans             &trans  &trans
+&trans  &trans          &trans           &trans       &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans       &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans           &trans       &trans               &trans  &trans  &trans  &trans  &trans
+                                         &kp PAGE_UP  &kp LC(PAGE_DOWN)    &trans  &trans
             >;
         };
     };
