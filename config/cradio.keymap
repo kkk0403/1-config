@@ -167,7 +167,7 @@
             bindings = <
 &trans  &trans          &trans           &trans           &trans               &trans  &trans  &trans  &trans  &trans
 &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans           &trans               &trans  &trans  &trans  &trans  &trans
-&reset  &msc SCRL_UP    &msc SCRL_DOWN   &trans           &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_UP    &msc SCRL_DOWN   &trans           &trans               &trans  &trans  &trans  &trans  &trans
                                          &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)    &trans  &trans
             >;
         };
