@@ -156,10 +156,10 @@
 
         layer_6 {
             bindings = <
-&trans       &trans      &trans         &trans     &trans      &trans         &trans  &trans  &trans  &trans
-&bootloader  &kp DELETE  &kp BACKSPACE  &kp SPACE  &trans      &trans         &trans  &trans  &trans  &trans
-&kp LEFT     &kp RIGHT   &mkp MB2       &mkp MB3   &trans      &trans         &trans  &trans  &trans  &trans
-                                        &kp ENTER  &mkp MB1    &kp RIGHT_WIN  &trans
+&trans    &trans      &trans         &trans     &trans      &trans         &trans  &trans  &trans  &trans
+&trans    &kp DELETE  &kp BACKSPACE  &kp SPACE  &trans      &trans         &trans  &trans  &trans  &trans
+&kp LEFT  &kp RIGHT   &mkp MB2       &mkp MB3   &trans      &trans         &trans  &trans  &trans  &trans
+                                     &kp ENTER  &mkp MB1    &kp RIGHT_WIN  &trans
             >;
         };
 
