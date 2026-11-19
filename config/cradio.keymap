@@ -127,10 +127,10 @@
         left_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PIPE    &kp DOUBLE_QUOTES  &kp SQT            &kp HASH  &kp GRAVE          &kp BACKSLASH  &kp FSLH   &kp PERCENT  &kp COLON     &kp SEMI
-&kp AT      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp LPAR  &default_report    &kp AMPS       &kp TAB    &kp MINUS    &kp ASTERISK  &kp DELETE
-&kp DOLLAR  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp RPAR  &bootloader        &kp CARET      &kp UNDER  &kp TILDE    &kp QUESTION  &kp EXCLAMATION
-                                                  &trans    &trans             &trans         &trans
+&kp PIPE    &kp DOUBLE_QUOTES  &kp SQT            &kp HASH  &kp GRAVE        &kp BACKSLASH  &kp FSLH   &kp PERCENT  &kp COLON     &bootloader
+&kp AT      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp LPAR  &kp SEMICOLON    &kp AMPS       &kp TAB    &kp MINUS    &kp ASTERISK  &kp DELETE
+&kp DOLLAR  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp RPAR  &kp CARET        &none          &kp UNDER  &kp TILDE    &kp QUESTION  &kp EXCLAMATION
+                                                  &trans    &trans           &trans         &trans
             >;
         };
 
@@ -156,8 +156,8 @@
 
         layer_6 {
             bindings = <
-&trans       &trans      &trans         &trans     &trans      &trans         &trans  &trans  &trans  &trans
-&bootloader  &kp DELETE  &kp BACKSPACE  &kp SPACE  &trans      &trans         &trans  &trans  &trans  &trans
+&bootloader  &trans      &trans         &trans     &trans      &trans         &trans  &trans  &trans  &trans
+&none        &kp DELETE  &kp BACKSPACE  &kp SPACE  &trans      &trans         &trans  &trans  &trans  &trans
 &kp LEFT     &kp RIGHT   &mkp MB2       &mkp MB3   &trans      &trans         &trans  &trans  &trans  &trans
                                         &kp ENTER  &mkp MB1    &kp RIGHT_WIN  &trans
             >;
@@ -167,7 +167,7 @@
             bindings = <
 &trans  &trans          &trans           &trans           &trans               &trans  &trans  &trans  &trans  &trans
 &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans           &trans               &trans  &trans  &trans  &trans  &trans
-&trans  &msc SCRL_UP    &msc SCRL_DOWN   &trans           &trans               &trans  &trans  &trans  &trans  &trans
+&reset  &msc SCRL_UP    &msc SCRL_DOWN   &trans           &trans               &trans  &trans  &trans  &trans  &trans
                                          &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)    &trans  &trans
             >;
         };
